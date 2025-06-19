@@ -1,8 +1,8 @@
 import requests
 import json
+import os
 
-# CHANGE THIS VALUE HERE
-api_key = 'YOUR_API_KEY'
+api_key = os.environ.get('api_key')
 
 url = f'https://api.nofiltergpt.com/v1/chat/completions?api_key={api_key}'
 
